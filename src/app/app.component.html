@@ -1,0 +1,9 @@
+<app-invoice-input
+  (vegAdd)="onVegAdded($event)"
+  (cosAdd)="onCosAdded($event)"
+></app-invoice-input>
+<br>
+<app-invoice-display 
+  *ngFor="let invoiceItem of invoiceItems"
+  [invItem]="invoiceItem">
+  </app-invoice-display>

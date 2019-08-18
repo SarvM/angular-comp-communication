@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="text-uppercase">Shopping Invoice</h1>
+    <p class="lead">Angular application to demonstrate component communication</p>
+    <div class="form-group">
+      <label for="itemName">Please enter the item name</label>
+      <input class="form-control" type="text" #itemName>
+    </div>
+    <div class="form-group">
+      <label for="itemPrice">Please enter the item price</label>
+      <input type="text" class="form-control" #itemPrice>
+    </div>
+    <button class="btn btn-success mr-2" (click)="onAddVegetable()">Add Vegetable</button>
+    <button class="btn btn-primary" (click)="onAddCosmetics()">Add Cosmetics</button>
+</div>
